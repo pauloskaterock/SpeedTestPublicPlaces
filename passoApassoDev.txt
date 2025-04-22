@@ -1,3 +1,32 @@
-rails new publicinternet --database=postgresql
+rails new publicinternet --database=postgresql (criação do projeto)
 
-git remote add origin https://github.com/pauloskaterock/SpeedTestPublicPlaces.git
+git remote add origin https://github.com/pauloskaterock/SpeedTestPublicPlaces.git(iniciando REPO git)
+--------------------------------------------
+
+Jira CARD(shetch other rough for a few web page)
+
+*user storie
+1-sendo um usuário do speedTest devo ser capaz de saber quais cafés tem internet para que eu posso escolher o local para trabalhar
+2- usuário pode decidir por avaliasoes do wi-fi
+3-usuario pde conectar em cafés recorrecorentes
+
+mudei o arquivo routes.rb adicionando root places#index (para fazer a pagina inicial)
+
+criei o arquivo publicinternet/app/controllers/places_controller.rb com o codigo abaixo
+
+class PlacesController < AplicationController
+  def index
+    render "places/index"
+  end
+ 
+end
+
+criei a pasta  publicinternet/app/views/layouts/pages/places/
+com o arquivo
+index.html.erb
+
+--- DATABASE MODELLING
+
+
+
+  # parei no 38:00

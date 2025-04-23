@@ -25,8 +25,24 @@ criei a pasta  publicinternet/app/views/layouts/pages/places/
 com o arquivo
 index.html.erb
 
---- DATABASE MODELLING
+--- DATABASE MODELLING - Jira CARD
+
+rails g migration AddPlacesTable  (criando a primeira tabela(cardJira) )
+ mudei o metodo do publicinternet/db/migrate/20250423174655_add_places_table.rb
+
+git checkout -b add-initial-tables
+
+git checkout -b no Git é usado para criar e alternar para uma nova ramificação (branch) simultaneamente. É uma maneira prática de realizar duas ações em um único comando: criar uma nova branch e mudar para ela.
+
+rails db:migrate (cria a migração do banco de dados)
+
+criado o arquivo places.rb(publicinternet/app/models/place.rb) * feito codigo
+
+acesso: rails console
+rails console>
+> Place.count
+>
 
 
 
-  # parei no 38:00
+  # parei no 44:00

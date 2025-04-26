@@ -41,7 +41,15 @@ criado o arquivo places.rb(publicinternet/app/models/place.rb) * feito codigo
 acesso: rails console
 rails console>
 > Place.count
->
+
+assim foi implementado a tabela place
+
+para gerarmos a tabela de velocidade speed:
+rails g migration  AddInternetSpeedsTable
+-passamos o mesmo padrao 
+
+mudei o publicinternet/db/migrate/20250423174655_add_places_table.rb metodo change
+
 
 
 

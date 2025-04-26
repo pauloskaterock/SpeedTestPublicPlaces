@@ -1,12 +1,10 @@
 
 class AddPlacesTable < ActiveRecord::Migration[8.0]
   def change
-    create_table :places, id: :uuid do |t|
-      t.string :name, null: false
-      t.string :address, null: false
-      t.string :city, null: false
+    create_table :internet_speeds, id: :uuid do |t| 
+      t.float :download_speed, null: false
+      t.string :download_speed_unit, null: false
 
-      # This adds in created_at and updated_at by default
       t.timestamps
     end
   end
